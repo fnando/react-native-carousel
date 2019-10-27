@@ -1,0 +1,50 @@
+{
+  "name": "@fnando/react-native-carousel",
+  "version": "0.0.0",
+  "description": "A ridiculously simple carousel.",
+  "keywords": [
+    "react-native",
+    "swiper",
+    "carousel",
+    "slider"
+  ],
+  "files": [
+    "dist/**/*",
+    "index.d.ts",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "main": "./dist/Carousel.js",
+  "module": "./dist/Carousel.js",
+  "repository": "https://github.com/fnando/react-native-carousel.git",
+  "author": "Nando Vieira",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "lint:eslint": "eslint --config .eslintrc.js --fix --max-warnings 0 *.js src/**/*",
+    "lint:prettier": "prettier --config --write src/**/*.{ts,tsx,js,json}",
+    "lint:tslint": "tslint --project tsconfig.json --format verbose",
+    "lint": "concurrently 'yarn lint:eslint' 'yarn lint:prettier' 'yarn lint:tslint'",
+    "dist": "yarn lint && yarn build"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/react": "^16.9.11",
+    "@types/react-native": "^0.60.21",
+    "@types/react-test-renderer": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "concurrently": "^5.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
