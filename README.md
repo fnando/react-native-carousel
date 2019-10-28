@@ -1,5 +1,8 @@
 # @fnando/react-native-carousel
 
+[![NPM package version](https://img.shields.io/npm/v/@fnando/react-native-carousel.svg)](https://www.npmjs.com/package/@fnando/react-native-carousel)
+![License: MIT](https://img.shields.io/npm/l/@fnando/react-native-carousel.svg)
+
 A ridiculously simple carousel.
 
 ## Usage
