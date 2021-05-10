@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fnando/react-native-carousel": "file:../..",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "react": "16.9.0",
     "react-native": "0.61.2"
   },
